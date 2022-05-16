@@ -18,7 +18,7 @@
     // Do any additional setup after loading the view.
     NSString* resultString = [self intToString:3];
     NSLog(@"Hi %s", [resultString UTF8String]);
-    [self foreverLoop];
+    [self foreverLoop123];
 }
 
 - (nonnull NSString *)intToString: (int)temp {
@@ -42,6 +42,19 @@
 }
 
 - (void)foreverLoop {
+    int row = 0;
+    int column = 0;
+    int value = 0;
+    
+    for(row = 0; row < 3; ++row) {
+        for(column = 0; column <= row; ++value) {
+            ++value;
+            NSLog(@"%c", value);
+        }
+    }
+}
+
+- (void)foreverLoop123 {
     int row = 0;
     int column = 0;
     int value = 0;
