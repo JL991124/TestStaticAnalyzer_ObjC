@@ -9,7 +9,7 @@ on:
 
 jobs:
   mobsfscan:
-    permissions: read-all
+    permissions: write-all
     runs-on: ubuntu-latest
     name: mobsfscan code scanning
     steps:
